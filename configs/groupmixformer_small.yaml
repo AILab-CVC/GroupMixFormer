@@ -1,0 +1,13 @@
+MODEL:
+  TYPE: groupmixformer
+  NAME: groupmixformer
+  GMA:
+    EMBEDDING_DIMS: [80, 160, 320, 320]
+    SERIAL_DEPTHS: [2, 4, 12, 4]
+    MLP_RATIOS: [4, 4, 4, 4]
+    DROP_PATH_RATE: 0.2
+  # PRETRAINED: ./pretrained//groupmixformer_small.pth ## uncomment this line to use pretrained model
+TRAIN: 
+  EPOCHS: 300
+  WARMUP_EPOCHS: 20
+
